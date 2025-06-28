@@ -2,6 +2,7 @@ services:
   - type: web
     name: translator-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python botidich.py"
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python botidich.py
     pythonVersion: 3.10
